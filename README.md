@@ -1,2 +1,2 @@
 # api-wheater
-Proyecto con JavaScript y API de Open Weather Map
+Proyecto con JavaScript y API Open Weather Map

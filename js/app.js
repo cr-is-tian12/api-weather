@@ -1,3 +1,8 @@
+import config from './../config.js';
+
+const appID = config.APP_ID;
+console.log(appID);
+
 const container = document.querySelector('.container');
 const resultado = document.querySelector('#resultado');
 const formulario = document.querySelector('#formulario');

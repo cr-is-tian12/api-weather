@@ -1,7 +1,6 @@
 import config from './../config.js';
 
 const appID = config.APP_ID;
-console.log(appID);
 
 const container = document.querySelector('.container');
 const resultado = document.querySelector('#resultado');
@@ -16,13 +15,11 @@ function buscarClima(e){
 
     console.log('Buscando clima..')
 
-    //validar el formulario
-
     const ciudad = document.querySelector('#ciudad').value;
     const pais = document.querySelector('#pais').value;
 
     if(ciudad ==='' || pais===''){
-        //Si esta vacio mostramos el siguiente mensaje
+ 
         mostrarError('Los campos son obligatorios')
     }
 
@@ -38,7 +35,8 @@ function mostrarError(mensaje){
     if(!alerta){
         //Scripting del mensaje
         const alerta = document.createElement('div');
-        alerta.classList.add('bg-red-100', 'border-red-400', 'text-red-700', 'px-4', 'py-3', 'rounded', 'max-w-md', 'mx-auto', 'mt-2', 'text-center')
+        alerta.classList.add('bg-red-100', 'border-red-400', 'text-red-700', 'px-4', 
+        'py-3', 'rounded', 'max-w-md', 'mx-auto', 'mt-2', 'text-center');
 
         alerta.innerHTML =`
             <strong class="font-bold">ERROR!</strong>
@@ -56,9 +54,6 @@ function mostrarError(mensaje){
 
 
 function consultarAPI(ciudad, pais){
-
-    const appID = 'c968eddd69b04d97dc822c6d83d520f5';
-
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appID}`
 
     // console.log(url)
@@ -109,7 +104,6 @@ function mostrarClima(resultadoDatos){
     nombre.innerHTML = `Clima en ${city}`;
     nombre.classList.add('font-bold', 'text-xl')
 
-    //Div del resultado
     const resultadoDiv = document.createElement('div');
     resultadoDiv.classList.add('text-center', 'text-white');
 

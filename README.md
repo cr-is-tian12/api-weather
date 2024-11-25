@@ -1,10 +1,5 @@
 # api-weather
-<<<<<<< HEAD
 Deployment API Open Weather Map
-=======
-
-Deployment API Open Weather Map
-=======
 
 Esta API proporciona información meteorológica en tiempo real para una ciudad específica utilizando los datos proporcionados por OpenWeatherMap. Los usuarios pueden consultar el clima actual en diferentes ubicaciones y obtener información como la temperatura.
 
@@ -18,5 +13,3 @@ Esta API proporciona información meteorológica en tiempo real para una ciudad 
 - **CSS3**
 - **Tailwind CSS**
 - **JavaScript**
-
->>>>>>> 16198b6 (api_weather)
